@@ -13,7 +13,7 @@ export class ProfileController {
         @inject(SERVICE_TYPES.ProfileService) private readonly profileService: IProfileService,
     ) {}
 
-    @httpGet('', JwtCheckerMiddleware)
+    @httpGet('')
     public async getAll(@request() req: Request, @response() res: Response): Promise<void> {
         try {
             const profiles: ProfileModel[] = await this.profileService.findAll();
@@ -36,7 +36,7 @@ export class ProfileController {
         }
     }
 
-    @httpGet('/:id', JwtCheckerMiddleware)
+    @httpGet('/:id')
     public async getById(@request() req: Request, @response() res: Response): Promise<void> {
         try {
             const id: string = req.params.id as string;

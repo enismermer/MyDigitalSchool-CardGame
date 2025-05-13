@@ -1,0 +1,10 @@
+<div class="fullscreen-bg">
+    <p *ngIf="isLoggedIn" style="color: white">
+        <span class="welcome">Duelliste : <strong>{{ userName }}</strong></span>
+    </p>
+
+    <button [routerLink]="'/addCard'">Invoquer</button>
+    
+    <img src="assets/carte.jpg" alt="carte" />
+</div>
+

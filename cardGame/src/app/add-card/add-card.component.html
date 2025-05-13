@@ -1,0 +1,10 @@
+<form [formGroup]="cardForm">
+    <label for="name">Nom de la carte :</label>
+    <input id="name" formControlName="name" />
+  
+    <label for="value">Valeur :</label>
+    <input id="value" type="number" formControlName="value" />
+  
+    <button (click)="onSubmit()">Ajouter la carte</button>
+</form>
+  

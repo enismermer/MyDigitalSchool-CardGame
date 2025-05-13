@@ -1,0 +1,13 @@
+### Obtenir tous les profils
+GET http://localhost:3010/api/profiles
+
+### Obtenir un profil selon l'id
+GET http://localhost:3010/api/profiles/eea7b214-dc32-44c0-a09a-14e0d55c0dc3
+
+### Enregistrer un nouveau profil
+PUT http://localhost:3010/api/profiles
+
+
+
+### Obtenir toutes les cartes
+GET http://localhost:3000/api/cards

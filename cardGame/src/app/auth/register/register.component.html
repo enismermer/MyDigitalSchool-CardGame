@@ -1,0 +1,26 @@
+<div class="fullscreen-bg">
+    <div class="register-container">
+        <h2>Inscription</h2>
+        <form [formGroup]="registerForm">
+            <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" formControlName="name" placeholder="Votre nom" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="login">Login</label>
+                <input type="text" id="login" formControlName="login" placeholder="Votre login" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input id="password" formControlName="password" type="password" placeholder="Votre mot de passe" required />
+            </div>
+            
+
+            <button (click)="onSubmit()" [disabled]="registerForm.invalid">S'inscrire</button>
+
+            <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+        </form>
+    </div>
+</div>

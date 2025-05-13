@@ -1,0 +1,14 @@
+.fullscreen-bg {
+    background-image: url('/assets/main.jpg');
+    background-size: cover;        // Remplit l'écran
+    background-position: center;   // Centrage
+    background-repeat: no-repeat;  // Pas de répétition
+    height: 100vh;                 // Hauteur de l'écran
+    width: 100vw;                  // Largeur de l'écran
+  }
+
+img {
+    width: 200px;
+    height: 300px;
+    margin: 130px 0 0 100px;
+}

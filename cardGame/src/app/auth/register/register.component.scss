@@ -1,0 +1,68 @@
+.fullscreen-bg {
+  background-image: url('/assets/inscription.jpg');
+  background-size: cover;        // Remplit l'écran
+  background-position: center;   // Centrage
+  background-repeat: no-repeat;  // Pas de répétition
+  height: 100vh;                 // Hauteur de l'écran
+  width: 100vw;                  // Largeur de l'écran
+}
+
+.register-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 2rem;
+    background-color: #D9D9D9;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    opacity: 85%;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: white;
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    margin-top: 1rem;
+    color: #d9534f;
+    text-align: center;
+    font-weight: bold;
+  }
+  

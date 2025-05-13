@@ -1,0 +1,21 @@
+<div class="fullscreen-bg">
+    <div class="login-container">
+        <h1>Connexion</h1>
+    
+        <form [formGroup]="loginForm">
+            <div class="form-group">
+                <label for="login">Login</label>
+                <input type="text" id="login" formControlName="login" placeholder="Votre login" required />
+            </div>
+        
+            <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" formControlName="password" placeholder="Votre mot de passe" required/>
+            </div>
+        
+            <button (click)="onSubmit()">Se connecter</button>
+        
+            <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+        </form>
+    </div>
+  </div>

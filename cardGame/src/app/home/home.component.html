@@ -1,0 +1,26 @@
+<div class="fullscreen-bg">
+    <div class="header" *ngIf="isHome()">
+      <div class="nav-buttons">
+        <a routerLink="/login" class="btn">Connexion</a>
+        <a routerLink="/register" class="btn">Inscription</a>
+      </div>
+    </div>
+  
+    <p *ngIf="isLoggedIn">
+      <span class="welcome">Duelliste : <strong>{{ userName }}</strong></span>
+    </p>
+  
+    <div class="hero" *ngIf="isHome()">
+      <h1>C'est l'heure du duel !</h1>
+      <a
+        class="btn play-btn"
+        [routerLink]="isLoggedIn ? '/play' : null"
+        [class.disabled]="!isLoggedIn"
+        [attr.aria-disabled]="!isLoggedIn"
+        (click)="!isLoggedIn && $event.preventDefault()"
+      >
+        Jouer
+      </a>
+    </div>
+      
+  </div>
